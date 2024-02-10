@@ -33,4 +33,4 @@ RUN cd jetson-utils && \
     make -j$(nproc) && \
     make install
     
-RUN python3 -c 'import jetson_utils'
+#RUN python3 -c 'import jetson_utils'

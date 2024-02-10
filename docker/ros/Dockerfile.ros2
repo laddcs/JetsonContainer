@@ -31,7 +31,8 @@ ENV PYTHONIOENCODING=utf-8
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 1
     
 # build ROS from source
-COPY ros2_build.sh ros2_build.sh
+COPY /ros/ros2_build.sh ros2_build.sh
+RUN ["chmod", "+x", "ros2_build.sh"]
 RUN ./ros2_build.sh
 
 # Set the default DDS middleware to cyclonedds
@@ -39,7 +40,7 @@ RUN ./ros2_build.sh
 ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
 # commands will be appended/run by the entrypoint which sources the ROS environment
-COPY ros_entrypoint.sh /ros_entrypoint.sh
+COPY /ros/ros_entrypoint.sh /ros_entrypoint.sh
 
 ENTRYPOINT ["/ros_entrypoint.sh"]
 CMD ["/bin/bash"]

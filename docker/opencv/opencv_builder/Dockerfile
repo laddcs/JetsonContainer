@@ -16,12 +16,12 @@ ENV LD_LIBRARY_PATH="/usr/local/cuda/lib64:${LD_LIBRARY_PATH}"
 
 WORKDIR /opt
 
-
 # build OpenCV - https://github.com/mdegans/nano_build_opencv/blob/master/build_opencv.sh
 ARG OPENCV_VERSION="4.5.0"
 
 # install build dependencies
-COPY opencv_install_deps.sh opencv_install_deps.sh
+COPY /opencv/opencv_builder/opencv_install_deps.sh opencv_install_deps.sh
+RUN ["chmod", "+x", "opencv_install_deps.sh"]
 RUN ./opencv_install_deps.sh
 
 # OpenCV looks for the cuDNN version in cudnn_version.h, but it's been renamed to cudnn_version_v8.h
