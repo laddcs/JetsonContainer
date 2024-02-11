@@ -19,3 +19,8 @@ docker login -u YOUR-USERNAME
 docker tag BUILT-IMAGE:latest YOUR-USERNAME/BUILT-IMAGE
 docker push YOUR-USERNAME/BUILT-IMAGE
 ```
+
+Run the container on the Jetson using:
+```bash
+sudo docker run --rm --runtime nvidia -it YOUR-USERNAME/BUILT-IMAGE
+```
