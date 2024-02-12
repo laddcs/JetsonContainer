@@ -29,11 +29,124 @@ ENV PYTHONIOENCODING=utf-8
 
 # set Python3 as default
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+
+RUN set -e
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    wget \
+    gnupg2 \
+    lsb-release \
+    ca-certificates
+
+# add the ROS deb repo to the apt sources list
+RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg && \
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | tee /etc/apt/sources.list.d/ros2.list > /dev/null && \
+    apt-get update
+
+# install development packages
+RUN apt-get install -y --no-install-recommends \
+    build-essential \
+    cmake \
+    git \
+    libbullet-dev \
+    libpython3-dev \
+    python3-colcon-common-extensions \
+    python3-flake8 \
+    python3-pip \
+    python3-numpy \
+    python3-pytest-cov \
+    python3-rosdep \
+    python3-setuptools \
+    python3-vcstool \
+    python3-rosinstall-generator \
+    libasio-dev \
+    libtinyxml2-dev \
+    libcunit1-dev
+
+# install some pip packages needed for testing
+RUN pip3 install --upgrade --no-cache-dir \
+    argcomplete \
+    flake8-blind-except \
+    flake8-builtins \
+    flake8-class-newline \
+    flake8-comprehensions \
+    flake8-deprecated \
+    flake8-docstrings \
+    flake8-import-order \
+    flake8-quotes \
+    pytest-repeat \
+    pytest-rerunfailures \
+    pytest
+
+# upgrade cmake - https://stackoverflow.com/a/56690743
+# this is needed to build some of the ROS2 packages	  
+# use pip to upgrade cmake instead because of kitware's rotating GPG keys:
+# https://github.com/dusty-nv/jetson-containers/issues/216			  
+RUN python3 -m pip install --upgrade pip && \
+    pip3 install --no-cache-dir scikit-build && \
+    pip3 install --upgrade --no-cache-dir --verbose cmake && \
+    cmake --version && \
+    which cmake
+
+RUN apt purge -y python3.9 libpython3.9* || echo "python3.9 not found, skipping removal" && \
+    ls -ll /usr/bin/python*
+
+RUN mkdir -p ${ROS_ROOT}/src
+WORKDIR ${ROS_ROOT}
+
+# download ROS sources
+RUN rosinstall_generator --deps --rosdistro ${ROS_DISTRO} ${ROS_PACKAGE} \
+        launch_xml \
+        launch_yaml \
+        launch_testing \
+        launch_testing_ament_cmake \
+        demo_nodes_cpp \
+        demo_nodes_py \
+        example_interfaces \
+        camera_calibration_parsers \
+        camera_info_manager \
+        cv_bridge \
+        v4l2_camera \
+        vision_opencv \
+        vision_msgs \
+        image_geometry \
+        image_pipeline \
+        image_transport \
+        compressed_image_transport \
+        compressed_depth_image_transport \
+    > ros2.${ROS_DISTRO}.${ROS_PACKAGE}.rosinstall && \
+    cat ros2.${ROS_DISTRO}.${ROS_PACKAGE}.rosinstall && \
+    vcs import src < ros2.${ROS_DISTRO}.${ROS_PACKAGE}.rosinstall
+
+RUN rm -r ${ROS_ROOT}/src/ament_cmake && \
+    git -C ${ROS_ROOT}/src/ clone https://github.com/ament/ament_cmake -b ${ROS_DISTRO}
+
+RUN SKIP_KEYS="libopencv-dev libopencv-contrib-dev libopencv-imgproc-dev python-opencv python3-opencv"
+
+# install dependencies using rosdep
+RUN rosdep init && \
+    rosdep update && \
+    rosdep install -y --ignore-src \
+        --from-paths src \
+        --rosdistro ${ROS_DISTRO} \
+        --skip-keys "$SKIP_KEYS"
     
-# build ROS from source
-COPY /ros/ros2_build.sh ros2_build.sh
-RUN ["chmod", "+x", "ros2_build.sh"]
-RUN ./ros2_build.sh
+# build it all
+RUN colcon build \
+	--merge-install \
+	--cmake-args -DCMAKE_BUILD_TYPE=Release 
+#	--event-handlers console_direct+
+
+# remove build files
+RUN rm -rf ${ROS_ROOT}/src && \
+    rm -rf ${ROS_ROOT}/logs && \
+    rm -rf ${ROS_ROOT}/build && \
+    rm ${ROS_ROOT}/*.rosinstall
+    
+# cleanup apt   
+RUN rm -rf /var/lib/apt/lists/* && \
+    apt-get clean
 
 # Set the default DDS middleware to cyclonedds
 # https://github.com/ros2/rclcpp/issues/1335
@@ -41,7 +154,7 @@ ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
 # commands will be appended/run by the entrypoint which sources the ROS environment
 COPY /ros/ros_entrypoint.sh /ros_entrypoint.sh
-
+RUN ["chmod", "+x", "/ros_entrypoint.sh"]
 ENTRYPOINT ["/ros_entrypoint.sh"]
 CMD ["/bin/bash"]
 
