@@ -24,3 +24,10 @@ Run the container on the Jetson using:
 ```bash
 sudo docker run --rm --runtime nvidia -it YOUR-USERNAME/BUILT-IMAGE
 ```
+
+To bind ports to container use:
+```bash
+sudo docker run --rm --runtime nvidia --device=/dev/ttyUSB0 -it YOUR-USERNAME/BUILT-IMAGE
+```
+
+Note when runnint on x86 host, there is an issue with cyclonedds discovering ports so ros might not be functional in container
