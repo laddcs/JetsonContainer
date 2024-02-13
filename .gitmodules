@@ -1,0 +1,6 @@
+[submodule "src/HardwareManagers"]
+	path = src/HardwareManagers
+	url = git@github.com:laddcs/HardwareManagers.git
+[submodule "src/gSDK"]
+	path = src/gSDK
+	url = git@github.com:brycetford/gSDK.git
