@@ -4,7 +4,7 @@
 # notes: installs compilers and build tools
 #---
 ARG BASE_IMAGE
-FROM ${BASE_IMAGE}
+FROM --platform=linux/arm64 ${BASE_IMAGE}
 
 ENV DEBIAN_FRONTEND=noninteractive
 
