@@ -52,4 +52,4 @@ USER ${USERNAME}
 WORKDIR /DroneWorkspace
 RUN source /opt/ros/humble/install/setup.bash && \
     colcon build \
-    --merge-install
+    --event-handlers console_direct+
