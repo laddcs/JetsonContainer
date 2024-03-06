@@ -25,3 +25,5 @@ docker build . -f ./jetson-utils/Dockerfile --build-arg="BASE_IMAGE=JetsonContai
 docker build . -f ./opencv/opencv_builder/Dockerfile --build-arg="BASE_IMAGE=JetsonContainer/jetson-utils" --build-arg="ENABLE_OPENGL=OFF" --build-arg="ENABLE_NEON=ON" --build-arg="CUDA_ARCH_BIN=8.7" --build-arg="OPENCV_VERSION=4.8.1" --tag=JetsonContainer/opencv-build
 
 docker build . -f ./ros/Dockerfile.ros2 --build-arg="BASE_IMAGE=JetsonContainer/opencv-build" --tag=JetsonContainer/ros2-humble
+
+docker build . -f ./fastdds/Dockerfile --build-arg="BASE_IMAGE=JetsonContainer/ros2-humble" --tag=JetsonContainer/drone-base
