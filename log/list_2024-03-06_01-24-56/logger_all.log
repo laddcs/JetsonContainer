@@ -1,0 +1,336 @@
+[0.348s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/incarsaron/JetsonContainer']
+[0.348s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/incarsaron/JetsonContainer'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fe647e111b0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7fe647e10280>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7fe647e10280>>)
+[0.380s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.380s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.381s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.381s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.381s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.381s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/incarsaron/JetsonContainer'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer) by extension 'ignore_ament_install'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer) by extensions ['colcon_pkg']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer) by extension 'colcon_pkg'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer) by extensions ['colcon_meta']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer) by extension 'colcon_meta'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer) by extensions ['ros']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer) by extension 'ros'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer) by extensions ['cmake', 'python']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer) by extension 'cmake'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer) by extension 'python'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer) by extensions ['python_setup_py']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer) by extension 'python_setup_py'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data) by extensions ['ignore', 'ignore_ament_install']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data) by extension 'ignore'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data) by extension 'ignore_ament_install'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data) by extensions ['colcon_pkg']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data) by extension 'colcon_pkg'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data) by extensions ['colcon_meta']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data) by extension 'colcon_meta'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data) by extensions ['ros']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data) by extension 'ros'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data) by extensions ['cmake', 'python']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data) by extension 'cmake'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data) by extension 'python'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data) by extensions ['python_setup_py']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data) by extension 'python_setup_py'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data/Optris_Cali) by extensions ['ignore', 'ignore_ament_install']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data/Optris_Cali) by extension 'ignore'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data/Optris_Cali) by extension 'ignore_ament_install'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data/Optris_Cali) by extensions ['colcon_pkg']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data/Optris_Cali) by extension 'colcon_pkg'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data/Optris_Cali) by extensions ['colcon_meta']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data/Optris_Cali) by extension 'colcon_meta'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data/Optris_Cali) by extensions ['ros']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data/Optris_Cali) by extension 'ros'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data/Optris_Cali) by extensions ['cmake', 'python']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data/Optris_Cali) by extension 'cmake'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data/Optris_Cali) by extension 'python'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data/Optris_Cali) by extensions ['python_setup_py']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/data/Optris_Cali) by extension 'python_setup_py'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker) by extension 'ignore'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker) by extension 'ignore_ament_install'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker) by extensions ['colcon_pkg']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker) by extension 'colcon_pkg'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker) by extensions ['colcon_meta']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker) by extension 'colcon_meta'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker) by extensions ['ros']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker) by extension 'ros'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker) by extensions ['cmake', 'python']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker) by extension 'cmake'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker) by extension 'python'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker) by extensions ['python_setup_py']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker) by extension 'python_setup_py'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/build-essential) by extensions ['ignore', 'ignore_ament_install']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/build-essential) by extension 'ignore'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/build-essential) by extension 'ignore_ament_install'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/build-essential) by extensions ['colcon_pkg']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/build-essential) by extension 'colcon_pkg'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/build-essential) by extensions ['colcon_meta']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/build-essential) by extension 'colcon_meta'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/build-essential) by extensions ['ros']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/build-essential) by extension 'ros'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/build-essential) by extensions ['cmake', 'python']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/build-essential) by extension 'cmake'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/build-essential) by extension 'python'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/build-essential) by extensions ['python_setup_py']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/build-essential) by extension 'python_setup_py'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cmake) by extensions ['ignore', 'ignore_ament_install']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cmake) by extension 'ignore'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cmake) by extension 'ignore_ament_install'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cmake) by extensions ['colcon_pkg']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cmake) by extension 'colcon_pkg'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cmake) by extensions ['colcon_meta']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cmake) by extension 'colcon_meta'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cmake) by extensions ['ros']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cmake) by extension 'ros'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cmake) by extensions ['cmake', 'python']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cmake) by extension 'cmake'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cmake) by extension 'python'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cmake) by extensions ['python_setup_py']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cmake) by extension 'python_setup_py'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda) by extensions ['ignore', 'ignore_ament_install']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda) by extension 'ignore'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda) by extension 'ignore_ament_install'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda) by extensions ['colcon_pkg']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda) by extension 'colcon_pkg'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda) by extensions ['colcon_meta']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda) by extension 'colcon_meta'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda) by extensions ['ros']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda) by extension 'ros'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda) by extensions ['cmake', 'python']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda) by extension 'cmake'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda) by extension 'python'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda) by extensions ['python_setup_py']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda) by extension 'python_setup_py'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cuda) by extensions ['ignore', 'ignore_ament_install']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cuda) by extension 'ignore'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cuda) by extension 'ignore_ament_install'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cuda) by extensions ['colcon_pkg']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cuda) by extension 'colcon_pkg'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cuda) by extensions ['colcon_meta']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cuda) by extension 'colcon_meta'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cuda) by extensions ['ros']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cuda) by extension 'ros'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cuda) by extensions ['cmake', 'python']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cuda) by extension 'cmake'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cuda) by extension 'python'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cuda) by extensions ['python_setup_py']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cuda) by extension 'python_setup_py'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cudnn) by extensions ['ignore', 'ignore_ament_install']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cudnn) by extension 'ignore'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cudnn) by extension 'ignore_ament_install'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cudnn) by extensions ['colcon_pkg']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cudnn) by extension 'colcon_pkg'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cudnn) by extensions ['colcon_meta']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cudnn) by extension 'colcon_meta'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cudnn) by extensions ['ros']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cudnn) by extension 'ros'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cudnn) by extensions ['cmake', 'python']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cudnn) by extension 'cmake'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cudnn) by extension 'python'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cudnn) by extensions ['python_setup_py']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/cuda/cudnn) by extension 'python_setup_py'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/fastdds) by extensions ['ignore', 'ignore_ament_install']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/fastdds) by extension 'ignore'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/fastdds) by extension 'ignore_ament_install'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/fastdds) by extensions ['colcon_pkg']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/fastdds) by extension 'colcon_pkg'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/fastdds) by extensions ['colcon_meta']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/fastdds) by extension 'colcon_meta'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/fastdds) by extensions ['ros']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/fastdds) by extension 'ros'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/fastdds) by extensions ['cmake', 'python']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/fastdds) by extension 'cmake'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/fastdds) by extension 'python'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/fastdds) by extensions ['python_setup_py']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/fastdds) by extension 'python_setup_py'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/gstreamer) by extensions ['ignore', 'ignore_ament_install']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/gstreamer) by extension 'ignore'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/gstreamer) by extension 'ignore_ament_install'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/gstreamer) by extensions ['colcon_pkg']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/gstreamer) by extension 'colcon_pkg'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/gstreamer) by extensions ['colcon_meta']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/gstreamer) by extension 'colcon_meta'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/gstreamer) by extensions ['ros']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/gstreamer) by extension 'ros'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/gstreamer) by extensions ['cmake', 'python']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/gstreamer) by extension 'cmake'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/gstreamer) by extension 'python'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/gstreamer) by extensions ['python_setup_py']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/gstreamer) by extension 'python_setup_py'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/jetson-utils) by extensions ['ignore', 'ignore_ament_install']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/jetson-utils) by extension 'ignore'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/jetson-utils) by extension 'ignore_ament_install'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/jetson-utils) by extensions ['colcon_pkg']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/jetson-utils) by extension 'colcon_pkg'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/jetson-utils) by extensions ['colcon_meta']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/jetson-utils) by extension 'colcon_meta'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/jetson-utils) by extensions ['ros']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/jetson-utils) by extension 'ros'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/jetson-utils) by extensions ['cmake', 'python']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/jetson-utils) by extension 'cmake'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/jetson-utils) by extension 'python'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/jetson-utils) by extensions ['python_setup_py']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/jetson-utils) by extension 'python_setup_py'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/laddcs) by extensions ['ignore', 'ignore_ament_install']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/laddcs) by extension 'ignore'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/laddcs) by extension 'ignore_ament_install'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/laddcs) by extensions ['colcon_pkg']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/laddcs) by extension 'colcon_pkg'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/laddcs) by extensions ['colcon_meta']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/laddcs) by extension 'colcon_meta'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/laddcs) by extensions ['ros']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/laddcs) by extension 'ros'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/laddcs) by extensions ['cmake', 'python']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/laddcs) by extension 'cmake'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/laddcs) by extension 'python'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/laddcs) by extensions ['python_setup_py']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/laddcs) by extension 'python_setup_py'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/numpy) by extensions ['ignore', 'ignore_ament_install']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/numpy) by extension 'ignore'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/numpy) by extension 'ignore_ament_install'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/numpy) by extensions ['colcon_pkg']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/numpy) by extension 'colcon_pkg'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/numpy) by extensions ['colcon_meta']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/numpy) by extension 'colcon_meta'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/numpy) by extensions ['ros']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/numpy) by extension 'ros'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/numpy) by extensions ['cmake', 'python']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/numpy) by extension 'cmake'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/numpy) by extension 'python'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/numpy) by extensions ['python_setup_py']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/numpy) by extension 'python_setup_py'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv) by extensions ['ignore', 'ignore_ament_install']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv) by extension 'ignore'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv) by extension 'ignore_ament_install'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv) by extensions ['colcon_pkg']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv) by extension 'colcon_pkg'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv) by extensions ['colcon_meta']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv) by extension 'colcon_meta'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv) by extensions ['ros']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv) by extension 'ros'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv) by extensions ['cmake', 'python']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv) by extension 'cmake'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv) by extension 'python'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv) by extensions ['python_setup_py']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv) by extension 'python_setup_py'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv/opencv_builder) by extensions ['ignore', 'ignore_ament_install']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv/opencv_builder) by extension 'ignore'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv/opencv_builder) by extension 'ignore_ament_install'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv/opencv_builder) by extensions ['colcon_pkg']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv/opencv_builder) by extension 'colcon_pkg'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv/opencv_builder) by extensions ['colcon_meta']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv/opencv_builder) by extension 'colcon_meta'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv/opencv_builder) by extensions ['ros']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv/opencv_builder) by extension 'ros'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv/opencv_builder) by extensions ['cmake', 'python']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv/opencv_builder) by extension 'cmake'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv/opencv_builder) by extension 'python'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv/opencv_builder) by extensions ['python_setup_py']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/opencv/opencv_builder) by extension 'python_setup_py'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/python) by extensions ['ignore', 'ignore_ament_install']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/python) by extension 'ignore'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/python) by extension 'ignore_ament_install'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/python) by extensions ['colcon_pkg']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/python) by extension 'colcon_pkg'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/python) by extensions ['colcon_meta']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/python) by extension 'colcon_meta'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/python) by extensions ['ros']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/python) by extension 'ros'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/python) by extensions ['cmake', 'python']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/python) by extension 'cmake'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/python) by extension 'python'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/python) by extensions ['python_setup_py']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/python) by extension 'python_setup_py'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/ros) by extensions ['ignore', 'ignore_ament_install']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/ros) by extension 'ignore'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/ros) by extension 'ignore_ament_install'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/ros) by extensions ['colcon_pkg']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/ros) by extension 'colcon_pkg'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/ros) by extensions ['colcon_meta']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/ros) by extension 'colcon_meta'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/ros) by extensions ['ros']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/ros) by extension 'ros'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/ros) by extensions ['cmake', 'python']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/ros) by extension 'cmake'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/ros) by extension 'python'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/ros) by extensions ['python_setup_py']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/ros) by extension 'python_setup_py'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/tensorrt) by extensions ['ignore', 'ignore_ament_install']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/tensorrt) by extension 'ignore'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/tensorrt) by extension 'ignore_ament_install'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/tensorrt) by extensions ['colcon_pkg']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/tensorrt) by extension 'colcon_pkg'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/tensorrt) by extensions ['colcon_meta']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/tensorrt) by extension 'colcon_meta'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/tensorrt) by extensions ['ros']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/tensorrt) by extension 'ros'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/tensorrt) by extensions ['cmake', 'python']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/tensorrt) by extension 'cmake'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/tensorrt) by extension 'python'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/tensorrt) by extensions ['python_setup_py']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/docker/tensorrt) by extension 'python_setup_py'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/log) by extensions ['ignore', 'ignore_ament_install']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/log) by extension 'ignore'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/log) ignored
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src) by extensions ['ignore', 'ignore_ament_install']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src) by extension 'ignore'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src) by extension 'ignore_ament_install'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src) by extensions ['colcon_pkg']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src) by extension 'colcon_pkg'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src) by extensions ['colcon_meta']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src) by extension 'colcon_meta'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src) by extensions ['ros']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src) by extension 'ros'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src) by extensions ['cmake', 'python']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src) by extension 'cmake'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src) by extension 'python'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src) by extensions ['python_setup_py']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src) by extension 'python_setup_py'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers) by extensions ['ignore', 'ignore_ament_install']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers) by extension 'ignore'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers) by extension 'ignore_ament_install'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers) by extensions ['colcon_pkg']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers) by extension 'colcon_pkg'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers) by extensions ['colcon_meta']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers) by extension 'colcon_meta'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers) by extensions ['ros']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers) by extension 'ros'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers) by extensions ['cmake', 'python']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers) by extension 'cmake'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers) by extension 'python'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers) by extensions ['python_setup_py']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers) by extension 'python_setup_py'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers/gimbal_manager) by extensions ['ignore', 'ignore_ament_install']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers/gimbal_manager) by extension 'ignore'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers/gimbal_manager) by extension 'ignore_ament_install'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers/gimbal_manager) by extensions ['colcon_pkg']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers/gimbal_manager) by extension 'colcon_pkg'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers/gimbal_manager) by extensions ['colcon_meta']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers/gimbal_manager) by extension 'colcon_meta'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers/gimbal_manager) by extensions ['ros']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers/gimbal_manager) by extension 'ros'
+[0.397s] DEBUG:colcon.colcon_core.package_identification:Package '/home/incarsaron/JetsonContainer/src/HardwareManagers/gimbal_manager' with type 'ros.ament_cmake' and name 'gimbal_manager'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers/ircamera_manager) by extensions ['ignore', 'ignore_ament_install']
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers/ircamera_manager) by extension 'ignore'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers/ircamera_manager) by extension 'ignore_ament_install'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers/ircamera_manager) by extensions ['colcon_pkg']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers/ircamera_manager) by extension 'colcon_pkg'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers/ircamera_manager) by extensions ['colcon_meta']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers/ircamera_manager) by extension 'colcon_meta'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers/ircamera_manager) by extensions ['ros']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/HardwareManagers/ircamera_manager) by extension 'ros'
+[0.398s] DEBUG:colcon.colcon_core.package_identification:Package '/home/incarsaron/JetsonContainer/src/HardwareManagers/ircamera_manager' with type 'ros.ament_cmake' and name 'ircamera_manager'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/gSDK) by extensions ['ignore', 'ignore_ament_install']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/gSDK) by extension 'ignore'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/gSDK) by extension 'ignore_ament_install'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/gSDK) by extensions ['colcon_pkg']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/gSDK) by extension 'colcon_pkg'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/gSDK) by extensions ['colcon_meta']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/gSDK) by extension 'colcon_meta'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/gSDK) by extensions ['ros']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/incarsaron/JetsonContainer/src/gSDK) by extension 'ros'
+[0.399s] DEBUG:colcon.colcon_core.package_identification:Package '/home/incarsaron/JetsonContainer/src/gSDK' with type 'ros.ament_cmake' and name 'gSDK'
+[0.399s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
