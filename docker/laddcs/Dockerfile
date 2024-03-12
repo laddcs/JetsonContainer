@@ -9,21 +9,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV SHELL /bin/bash
 SHELL ["/bin/bash", "-c"] 
 
-# Install libirmanager from evocortex
-WORKDIR /tmp
-RUN sudo apt-get update -y \
-    && apt-get install -y --no-install-recommends\
-        cmake \
-		udev \
-		kmod \
-		build-essential \
-        freeglut3-dev \
-        libusb-1.0-0-dev \
-	&& wget http://ftp.evocortex.com/libirimager-8.9.0-arm64.deb \
-	&& bash -c 'echo "options uvcvideo nodrop=1" > /etc/modprobe.d/uvcvideo.conf' \
-	&& dpkg -i libirimager-8.9.0-arm64.deb
-WORKDIR /
-
+# Copy in calibration data for the optris
 COPY /data/Optris_Cali /usr/share/libirimager/cali
 
 RUN mkdir /DroneWorkspace
