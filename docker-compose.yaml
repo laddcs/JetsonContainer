@@ -1,0 +1,24 @@
+services:
+  dev:
+    image: jetsoncontainer:dev
+    build:
+      context: .
+      dockerfile: docker/dev/Dockerfile
+      target: dev
+      args:
+        - BASE_IMAGE=brycetford/drone-deploy
+    stdin_open: true
+    tty: true
+    # Networking and IPC for ROS 2
+    network_mode: host
+    ipc: host
+    # Needed to display graphical applications
+    privileged: True
+    environment:
+      # Allows graphical programs in the container.
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    volumes:
+      - ./src:/DroneWorkspace:rw
+      - ./.vscode:/DroneWorkspace/.vscode:rw

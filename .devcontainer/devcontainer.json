@@ -1,0 +1,28 @@
+{
+    "name": "Jetson Dev Container",
+
+    // Use docker compose when creating container
+    "dockerComposeFile":["../docker-compose.yaml"],
+
+    // Launch dev service
+    "service": "dev",
+
+    // What folder to open vscode in within the container
+    "workspaceFolder": "/DroneWorkspace",
+
+    "customizations": {
+        "vscode": {
+            // Extensions to install in dev container
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-python.python",
+                "nonanonno.vscode-ros2",
+                "ms-iot.vscode-ros",
+                "ms-vscode.cmake-tools"
+            ],
+
+            // Container specific settings
+            "settings": {}
+        }
+    }
+}
