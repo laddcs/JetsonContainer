@@ -20,5 +20,6 @@ services:
       - QT_X11_NO_MITSHM=1
       - NVIDIA_DRIVER_CAPABILITIES=all
     volumes:
-      - ./src:/DroneWorkspace:rw
+      - ./src/HardwareManagers/:/DroneWorkspace/HardwareManagers/:rw
+      - ./src/gSDK/:/DroneWorkspace/gSDK/:rw
       - ./.vscode:/DroneWorkspace/.vscode:rw
