@@ -16,10 +16,6 @@ services:
     # Needed to display graphical applications
     privileged: True
     environment:
-      # Allows graphical programs in the container.
-      - DISPLAY=${DISPLAY}
-      - QT_X11_NO_MITSHM=1
-      - NVIDIA_DRIVER_CAPABILITIES=all
       - RAM_SIZE=4G
       - CPU_CORES=4
     volumes:

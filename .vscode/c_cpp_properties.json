@@ -8,7 +8,8 @@
             "includePath": [
                 "/opt/ros/humble/install/include/**",
                 "/usr/include/**",
-                "/opt/ros/humble/install/include/cv_bridge",
+                "/usr/local/include/opencv4",
+                "/usr/local/cuda/include",
                 "${workspaceFolder}/HardwareManagers/streamer/include"
             ],
             "name": "ROS",
