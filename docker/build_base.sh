@@ -26,8 +26,6 @@ docker build . -f ./opencv/opencv_builder/Dockerfile --build-arg="BASE_IMAGE=Jet
 
 docker build . -f ./ros/Dockerfile.ros2 --build-arg="BASE_IMAGE=JetsonContainer/opencv-build" --tag=JetsonContainer/ros2-humble
 
-#docker build . -f ./fastdds/Dockerfile --build-arg="BASE_IMAGE=JetsonContainer/ros2-humble" --tag=JetsonContainer/drone-base
-
-
+docker build . -f ./drone-deploy/Dockerfile --build-arg="BASE_IMAGE=JetsonContainer/ros2-humble" --tag=JetsonContainer/drone-base
 
 docker build . -f ./laddcs/Dockerfile --build-arg="BASE_IMAGE=JetsonContainer/drone-base" --tag=Jetsoncontainer/laddcs-deploy
