@@ -28,4 +28,4 @@ docker build . -f ./ros/Dockerfile.ros2 --build-arg="BASE_IMAGE=JetsonContainer/
 
 docker build . -f ./drone-deploy/Dockerfile --build-arg="BASE_IMAGE=JetsonContainer/ros2-humble" --tag=JetsonContainer/drone-base
 
-docker build . -f ./laddcs/Dockerfile --build-arg="BASE_IMAGE=JetsonContainer/drone-base" --tag=Jetsoncontainer/laddcs-deploy
+# docker build . -f ./laddcs/Dockerfile --build-arg="BASE_IMAGE=JetsonContainer/drone-base" --tag=Jetsoncontainer/laddcs-deploy
