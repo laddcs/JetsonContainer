@@ -1,2 +1,0 @@
-Invoking command in '/DroneWorkspace/build/streamer': /usr/local/bin/cmake /DroneWorkspace/HardwareManagers/streamer -DCMAKE_INSTALL_PREFIX=/DroneWorkspace/install/streamer
-Invoked command in '/DroneWorkspace/build/streamer' returned '1': /usr/local/bin/cmake /DroneWorkspace/HardwareManagers/streamer -DCMAKE_INSTALL_PREFIX=/DroneWorkspace/install/streamer
