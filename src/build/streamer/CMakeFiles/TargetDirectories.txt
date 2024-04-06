@@ -1,0 +1,10 @@
+/DroneWorkspace/build/streamer/CMakeFiles/uninstall.dir
+/DroneWorkspace/build/streamer/CMakeFiles/streamer_uninstall.dir
+/DroneWorkspace/build/streamer/CMakeFiles/streamer.dir
+/DroneWorkspace/build/streamer/CMakeFiles/test.dir
+/DroneWorkspace/build/streamer/CMakeFiles/edit_cache.dir
+/DroneWorkspace/build/streamer/CMakeFiles/rebuild_cache.dir
+/DroneWorkspace/build/streamer/CMakeFiles/list_install_components.dir
+/DroneWorkspace/build/streamer/CMakeFiles/install.dir
+/DroneWorkspace/build/streamer/CMakeFiles/install/local.dir
+/DroneWorkspace/build/streamer/CMakeFiles/install/strip.dir

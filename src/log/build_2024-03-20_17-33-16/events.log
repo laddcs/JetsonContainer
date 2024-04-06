@@ -1,0 +1,565 @@
+[0.000000] (-) TimerEvent: {}
+[0.011910] (-) JobUnselected: {'identifier': 'gSDK'}
+[0.015228] (-) JobUnselected: {'identifier': 'gimbal_manager'}
+[0.015447] (-) JobUnselected: {'identifier': 'hardware_managers'}
+[0.015606] (-) JobUnselected: {'identifier': 'hardware_msgs'}
+[0.015687] (-) JobUnselected: {'identifier': 'ircamera_manager'}
+[0.015967] (-) JobUnselected: {'identifier': 'logger'}
+[0.016079] (streamer) JobQueued: {'identifier': 'streamer', 'dependencies': OrderedDict()}
+[0.036343] (streamer) JobStarted: {'identifier': 'streamer'}
+[0.059291] (-) TimerEvent: {}
+[0.161221] (-) TimerEvent: {}
+[0.262292] (-) TimerEvent: {}
+[0.298563] (streamer) JobProgress: {'identifier': 'streamer', 'progress': 'cmake'}
+[0.306078] (streamer) JobProgress: {'identifier': 'streamer', 'progress': 'build'}
+[0.313912] (streamer) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/DroneWorkspace/build/streamer', '--', '-j12', '-l12'], 'cwd': '/DroneWorkspace/build/streamer', 'env': OrderedDict([('CMAKE_PREFIX_PATH', '/opt/ros/humble/install'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('PYTHONPATH', '/opt/ros/humble/install/local/lib/python3.10/dist-packages:/opt/ros/humble/install/lib/python3.10/site-packages'), ('CUDA_HOME', '/usr/local/cuda'), ('PWD', '/DroneWorkspace/build/streamer'), ('SHELL', '/bin/bash'), ('DEBIAN_FRONTEND', 'noninteractive'), ('AMENT_PREFIX_PATH', '/opt/ros/humble/install'), ('ROS_ROOT', '/opt/ros/humble'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LANG', 'en_US.UTF-8'), ('DISPLAY', ':0'), ('PATH', '/opt/ros/humble/install/bin:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('QT_X11_NO_MITSHM', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('TERM', 'xterm'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('PKG_CONFIG_PATH', '/opt/ros/humble/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/humble/install/lib/pkgconfig'), ('ROS_VERSION', '2'), ('_', '/usr/bin/colcon'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/opt/ros/humble/install'), ('ROS_PYTHON_VERSION', '3'), ('OLDPWD', '/opt/ros/humble/install'), ('HOME', '/home/devuser'), ('LD_LIBRARY_PATH', '/opt/ros/humble/install/lib:/usr/local/cuda/lib64:/usr/local/cuda/compat:/usr/local/cuda/lib64:'), ('SHLVL', '1'), ('HOSTNAME', 'incarsaron-HP-Pavilion-Laptop-15-eg2xxx'), ('PYTHONIOENCODING', 'utf-8'), ('OPENBLAS_CORETYPE', 'ARMV8')]), 'shell': False}
+[0.362560] (-) TimerEvent: {}
+[0.463725] (-) TimerEvent: {}
+[0.564737] (-) TimerEvent: {}
+[0.665601] (-) TimerEvent: {}
+[0.766595] (-) TimerEvent: {}
+[0.867594] (-) TimerEvent: {}
+[0.968591] (-) TimerEvent: {}
+[1.069815] (-) TimerEvent: {}
+[1.171177] (-) TimerEvent: {}
+[1.272330] (-) TimerEvent: {}
+[1.373483] (-) TimerEvent: {}
+[1.474990] (-) TimerEvent: {}
+[1.576101] (-) TimerEvent: {}
+[1.677049] (-) TimerEvent: {}
+[1.778133] (-) TimerEvent: {}
+[1.879126] (-) TimerEvent: {}
+[1.980068] (-) TimerEvent: {}
+[2.081029] (-) TimerEvent: {}
+[2.182012] (-) TimerEvent: {}
+[2.283035] (-) TimerEvent: {}
+[2.384292] (-) TimerEvent: {}
+[2.485438] (-) TimerEvent: {}
+[2.586412] (-) TimerEvent: {}
+[2.687474] (-) TimerEvent: {}
+[2.788525] (-) TimerEvent: {}
+[2.889493] (-) TimerEvent: {}
+[2.990473] (-) TimerEvent: {}
+[3.091422] (-) TimerEvent: {}
+[3.192432] (-) TimerEvent: {}
+[3.293482] (-) TimerEvent: {}
+[3.394577] (-) TimerEvent: {}
+[3.495599] (-) TimerEvent: {}
+[3.596644] (-) TimerEvent: {}
+[3.697617] (-) TimerEvent: {}
+[3.798583] (-) TimerEvent: {}
+[3.899562] (-) TimerEvent: {}
+[4.000566] (-) TimerEvent: {}
+[4.101579] (-) TimerEvent: {}
+[4.202578] (-) TimerEvent: {}
+[4.303548] (-) TimerEvent: {}
+[4.404503] (-) TimerEvent: {}
+[4.505535] (-) TimerEvent: {}
+[4.606516] (-) TimerEvent: {}
+[4.707528] (-) TimerEvent: {}
+[4.808511] (-) TimerEvent: {}
+[4.909624] (-) TimerEvent: {}
+[5.010629] (-) TimerEvent: {}
+[5.111779] (-) TimerEvent: {}
+[5.212818] (-) TimerEvent: {}
+[5.313687] (-) TimerEvent: {}
+[5.414726] (-) TimerEvent: {}
+[5.515811] (-) TimerEvent: {}
+[5.616867] (-) TimerEvent: {}
+[5.717858] (-) TimerEvent: {}
+[5.818917] (-) TimerEvent: {}
+[5.919988] (-) TimerEvent: {}
+[6.020907] (-) TimerEvent: {}
+[6.121829] (-) TimerEvent: {}
+[6.222813] (-) TimerEvent: {}
+[6.323835] (-) TimerEvent: {}
+[6.424888] (-) TimerEvent: {}
+[6.525968] (-) TimerEvent: {}
+[6.627005] (-) TimerEvent: {}
+[6.727924] (-) TimerEvent: {}
+[6.829000] (-) TimerEvent: {}
+[6.929998] (-) TimerEvent: {}
+[7.031029] (-) TimerEvent: {}
+[7.132142] (-) TimerEvent: {}
+[7.233098] (-) TimerEvent: {}
+[7.334013] (-) TimerEvent: {}
+[7.435033] (-) TimerEvent: {}
+[7.536047] (-) TimerEvent: {}
+[7.636974] (-) TimerEvent: {}
+[7.738010] (-) TimerEvent: {}
+[7.839075] (-) TimerEvent: {}
+[7.940069] (-) TimerEvent: {}
+[8.041240] (-) TimerEvent: {}
+[8.142349] (-) TimerEvent: {}
+[8.243414] (-) TimerEvent: {}
+[8.344505] (-) TimerEvent: {}
+[8.445528] (-) TimerEvent: {}
+[8.546506] (-) TimerEvent: {}
+[8.647503] (-) TimerEvent: {}
+[8.748532] (-) TimerEvent: {}
+[8.849585] (-) TimerEvent: {}
+[8.950557] (-) TimerEvent: {}
+[9.051515] (-) TimerEvent: {}
+[9.152605] (-) TimerEvent: {}
+[9.253663] (-) TimerEvent: {}
+[9.354690] (-) TimerEvent: {}
+[9.455713] (-) TimerEvent: {}
+[9.556716] (-) TimerEvent: {}
+[9.657742] (-) TimerEvent: {}
+[9.758723] (-) TimerEvent: {}
+[9.859625] (-) TimerEvent: {}
+[9.960617] (-) TimerEvent: {}
+[10.061628] (-) TimerEvent: {}
+[10.162637] (-) TimerEvent: {}
+[10.263651] (-) TimerEvent: {}
+[10.364585] (-) TimerEvent: {}
+[10.465649] (-) TimerEvent: {}
+[10.566639] (-) TimerEvent: {}
+[10.667630] (-) TimerEvent: {}
+[10.768729] (-) TimerEvent: {}
+[10.869632] (-) TimerEvent: {}
+[10.970680] (-) TimerEvent: {}
+[11.071708] (-) TimerEvent: {}
+[11.172744] (-) TimerEvent: {}
+[11.273660] (-) TimerEvent: {}
+[11.374695] (-) TimerEvent: {}
+[11.475733] (-) TimerEvent: {}
+[11.576690] (-) TimerEvent: {}
+[11.677764] (-) TimerEvent: {}
+[11.778815] (-) TimerEvent: {}
+[11.879802] (-) TimerEvent: {}
+[11.980714] (-) TimerEvent: {}
+[12.081661] (-) TimerEvent: {}
+[12.183123] (-) TimerEvent: {}
+[12.284133] (-) TimerEvent: {}
+[12.385163] (-) TimerEvent: {}
+[12.486299] (-) TimerEvent: {}
+[12.587245] (-) TimerEvent: {}
+[12.688264] (-) TimerEvent: {}
+[12.789448] (-) TimerEvent: {}
+[12.891073] (-) TimerEvent: {}
+[12.992187] (-) TimerEvent: {}
+[13.093297] (-) TimerEvent: {}
+[13.194352] (-) TimerEvent: {}
+[13.295287] (-) TimerEvent: {}
+[13.396232] (-) TimerEvent: {}
+[13.497258] (-) TimerEvent: {}
+[13.598296] (-) TimerEvent: {}
+[13.699170] (-) TimerEvent: {}
+[13.800165] (-) TimerEvent: {}
+[13.901047] (-) TimerEvent: {}
+[14.001965] (-) TimerEvent: {}
+[14.102992] (-) TimerEvent: {}
+[14.204085] (-) TimerEvent: {}
+[14.305011] (-) TimerEvent: {}
+[14.406200] (-) TimerEvent: {}
+[14.507193] (-) TimerEvent: {}
+[14.608204] (-) TimerEvent: {}
+[14.709511] (-) TimerEvent: {}
+[14.810545] (-) TimerEvent: {}
+[14.911572] (-) TimerEvent: {}
+[15.012514] (-) TimerEvent: {}
+[15.113531] (-) TimerEvent: {}
+[15.214499] (-) TimerEvent: {}
+[15.315547] (-) TimerEvent: {}
+[15.416593] (-) TimerEvent: {}
+[15.517649] (-) TimerEvent: {}
+[15.618704] (-) TimerEvent: {}
+[15.719848] (-) TimerEvent: {}
+[15.821054] (-) TimerEvent: {}
+[15.922355] (-) TimerEvent: {}
+[16.023359] (-) TimerEvent: {}
+[16.124374] (-) TimerEvent: {}
+[16.225441] (-) TimerEvent: {}
+[16.326803] (-) TimerEvent: {}
+[16.427902] (-) TimerEvent: {}
+[16.528883] (-) TimerEvent: {}
+[16.629999] (-) TimerEvent: {}
+[16.731083] (-) TimerEvent: {}
+[16.832100] (-) TimerEvent: {}
+[16.933284] (-) TimerEvent: {}
+[17.034402] (-) TimerEvent: {}
+[17.135575] (-) TimerEvent: {}
+[17.236511] (-) TimerEvent: {}
+[17.337513] (-) TimerEvent: {}
+[17.438537] (-) TimerEvent: {}
+[17.539524] (-) TimerEvent: {}
+[17.640554] (-) TimerEvent: {}
+[17.741575] (-) TimerEvent: {}
+[17.842572] (-) TimerEvent: {}
+[17.943536] (-) TimerEvent: {}
+[18.044531] (-) TimerEvent: {}
+[18.145555] (-) TimerEvent: {}
+[18.246535] (-) TimerEvent: {}
+[18.347479] (-) TimerEvent: {}
+[18.448449] (-) TimerEvent: {}
+[18.549590] (-) TimerEvent: {}
+[18.650580] (-) TimerEvent: {}
+[18.751695] (-) TimerEvent: {}
+[18.852612] (-) TimerEvent: {}
+[18.953665] (-) TimerEvent: {}
+[19.054589] (-) TimerEvent: {}
+[19.155631] (-) TimerEvent: {}
+[19.256622] (-) TimerEvent: {}
+[19.357596] (-) TimerEvent: {}
+[19.458615] (-) TimerEvent: {}
+[19.559696] (-) TimerEvent: {}
+[19.660745] (-) TimerEvent: {}
+[19.761729] (-) TimerEvent: {}
+[19.862813] (-) TimerEvent: {}
+[19.963888] (-) TimerEvent: {}
+[20.064912] (-) TimerEvent: {}
+[20.076459] (streamer) StdoutLine: {'line': b'-- The CUDA compiler identification is NVIDIA 12.2.140\n'}
+[20.122484] (streamer) StdoutLine: {'line': b'-- Detecting CUDA compiler ABI info\n'}
+[20.165139] (-) TimerEvent: {}
+[20.266122] (-) TimerEvent: {}
+[20.367111] (-) TimerEvent: {}
+[20.468105] (-) TimerEvent: {}
+[20.569183] (-) TimerEvent: {}
+[20.670165] (-) TimerEvent: {}
+[20.771145] (-) TimerEvent: {}
+[20.872132] (-) TimerEvent: {}
+[20.973166] (-) TimerEvent: {}
+[21.074165] (-) TimerEvent: {}
+[21.175194] (-) TimerEvent: {}
+[21.276529] (-) TimerEvent: {}
+[21.377603] (-) TimerEvent: {}
+[21.478843] (-) TimerEvent: {}
+[21.579879] (-) TimerEvent: {}
+[21.681040] (-) TimerEvent: {}
+[21.782332] (-) TimerEvent: {}
+[21.883005] (-) TimerEvent: {}
+[21.983974] (-) TimerEvent: {}
+[22.084752] (-) TimerEvent: {}
+[22.185391] (-) TimerEvent: {}
+[22.286077] (-) TimerEvent: {}
+[22.386716] (-) TimerEvent: {}
+[22.487461] (-) TimerEvent: {}
+[22.588216] (-) TimerEvent: {}
+[22.688845] (-) TimerEvent: {}
+[22.789628] (-) TimerEvent: {}
+[22.890340] (-) TimerEvent: {}
+[22.991026] (-) TimerEvent: {}
+[23.091765] (-) TimerEvent: {}
+[23.192673] (-) TimerEvent: {}
+[23.293644] (-) TimerEvent: {}
+[23.394642] (-) TimerEvent: {}
+[23.495645] (-) TimerEvent: {}
+[23.596563] (-) TimerEvent: {}
+[23.697498] (-) TimerEvent: {}
+[23.798554] (-) TimerEvent: {}
+[23.899567] (-) TimerEvent: {}
+[24.000526] (-) TimerEvent: {}
+[24.101586] (-) TimerEvent: {}
+[24.202354] (-) TimerEvent: {}
+[24.303114] (-) TimerEvent: {}
+[24.404213] (-) TimerEvent: {}
+[24.505422] (-) TimerEvent: {}
+[24.606437] (-) TimerEvent: {}
+[24.707413] (-) TimerEvent: {}
+[24.808447] (-) TimerEvent: {}
+[24.909625] (-) TimerEvent: {}
+[25.010704] (-) TimerEvent: {}
+[25.111809] (-) TimerEvent: {}
+[25.212732] (-) TimerEvent: {}
+[25.313554] (-) TimerEvent: {}
+[25.414299] (-) TimerEvent: {}
+[25.515064] (-) TimerEvent: {}
+[25.615794] (-) TimerEvent: {}
+[25.716530] (-) TimerEvent: {}
+[25.817235] (-) TimerEvent: {}
+[25.918393] (-) TimerEvent: {}
+[26.019472] (-) TimerEvent: {}
+[26.120538] (-) TimerEvent: {}
+[26.221828] (-) TimerEvent: {}
+[26.322928] (-) TimerEvent: {}
+[26.423951] (-) TimerEvent: {}
+[26.525012] (-) TimerEvent: {}
+[26.625998] (-) TimerEvent: {}
+[26.727067] (-) TimerEvent: {}
+[26.828118] (-) TimerEvent: {}
+[26.929152] (-) TimerEvent: {}
+[27.030179] (-) TimerEvent: {}
+[27.131162] (-) TimerEvent: {}
+[27.232111] (-) TimerEvent: {}
+[27.333195] (-) TimerEvent: {}
+[27.434241] (-) TimerEvent: {}
+[27.535277] (-) TimerEvent: {}
+[27.636376] (-) TimerEvent: {}
+[27.737559] (-) TimerEvent: {}
+[27.838629] (-) TimerEvent: {}
+[27.939639] (-) TimerEvent: {}
+[28.040564] (-) TimerEvent: {}
+[28.141545] (-) TimerEvent: {}
+[28.242489] (-) TimerEvent: {}
+[28.343439] (-) TimerEvent: {}
+[28.444448] (-) TimerEvent: {}
+[28.545410] (-) TimerEvent: {}
+[28.646540] (-) TimerEvent: {}
+[28.747589] (-) TimerEvent: {}
+[28.848568] (-) TimerEvent: {}
+[28.949516] (-) TimerEvent: {}
+[29.050778] (-) TimerEvent: {}
+[29.152044] (-) TimerEvent: {}
+[29.253237] (-) TimerEvent: {}
+[29.354221] (-) TimerEvent: {}
+[29.455329] (-) TimerEvent: {}
+[29.556336] (-) TimerEvent: {}
+[29.657305] (-) TimerEvent: {}
+[29.758119] (-) TimerEvent: {}
+[29.858771] (-) TimerEvent: {}
+[29.959446] (-) TimerEvent: {}
+[30.060203] (-) TimerEvent: {}
+[30.160828] (-) TimerEvent: {}
+[30.261473] (-) TimerEvent: {}
+[30.362104] (-) TimerEvent: {}
+[30.462812] (-) TimerEvent: {}
+[30.563512] (-) TimerEvent: {}
+[30.664232] (-) TimerEvent: {}
+[30.764972] (-) TimerEvent: {}
+[30.865766] (-) TimerEvent: {}
+[30.966794] (-) TimerEvent: {}
+[31.067792] (-) TimerEvent: {}
+[31.168817] (-) TimerEvent: {}
+[31.269705] (-) TimerEvent: {}
+[31.370610] (-) TimerEvent: {}
+[31.471611] (-) TimerEvent: {}
+[31.572493] (-) TimerEvent: {}
+[31.673491] (-) TimerEvent: {}
+[31.774463] (-) TimerEvent: {}
+[31.875443] (-) TimerEvent: {}
+[31.976404] (-) TimerEvent: {}
+[32.077423] (-) TimerEvent: {}
+[32.178421] (-) TimerEvent: {}
+[32.279501] (-) TimerEvent: {}
+[32.380559] (-) TimerEvent: {}
+[32.481564] (-) TimerEvent: {}
+[32.582580] (-) TimerEvent: {}
+[32.683628] (-) TimerEvent: {}
+[32.784685] (-) TimerEvent: {}
+[32.885719] (-) TimerEvent: {}
+[32.986804] (-) TimerEvent: {}
+[33.087985] (-) TimerEvent: {}
+[33.189161] (-) TimerEvent: {}
+[33.290201] (-) TimerEvent: {}
+[33.391233] (-) TimerEvent: {}
+[33.492320] (-) TimerEvent: {}
+[33.593376] (-) TimerEvent: {}
+[33.694561] (-) TimerEvent: {}
+[33.795717] (-) TimerEvent: {}
+[33.896818] (-) TimerEvent: {}
+[33.997897] (-) TimerEvent: {}
+[34.098890] (-) TimerEvent: {}
+[34.199997] (-) TimerEvent: {}
+[34.301051] (-) TimerEvent: {}
+[34.402019] (-) TimerEvent: {}
+[34.502976] (-) TimerEvent: {}
+[34.604038] (-) TimerEvent: {}
+[34.705086] (-) TimerEvent: {}
+[34.806139] (-) TimerEvent: {}
+[34.907214] (-) TimerEvent: {}
+[35.008351] (-) TimerEvent: {}
+[35.109402] (-) TimerEvent: {}
+[35.210446] (-) TimerEvent: {}
+[35.311495] (-) TimerEvent: {}
+[35.412528] (-) TimerEvent: {}
+[35.513579] (-) TimerEvent: {}
+[35.614660] (-) TimerEvent: {}
+[35.715604] (-) TimerEvent: {}
+[35.816569] (-) TimerEvent: {}
+[35.917579] (-) TimerEvent: {}
+[36.018606] (-) TimerEvent: {}
+[36.119661] (-) TimerEvent: {}
+[36.220753] (-) TimerEvent: {}
+[36.321684] (-) TimerEvent: {}
+[36.422668] (-) TimerEvent: {}
+[36.523625] (-) TimerEvent: {}
+[36.624519] (-) TimerEvent: {}
+[36.725455] (-) TimerEvent: {}
+[36.826476] (-) TimerEvent: {}
+[36.927444] (-) TimerEvent: {}
+[37.028431] (-) TimerEvent: {}
+[37.129337] (-) TimerEvent: {}
+[37.230369] (-) TimerEvent: {}
+[37.331354] (-) TimerEvent: {}
+[37.432326] (-) TimerEvent: {}
+[37.533429] (-) TimerEvent: {}
+[37.634455] (-) TimerEvent: {}
+[37.735446] (-) TimerEvent: {}
+[37.836478] (-) TimerEvent: {}
+[37.937499] (-) TimerEvent: {}
+[38.038526] (-) TimerEvent: {}
+[38.139571] (-) TimerEvent: {}
+[38.240596] (-) TimerEvent: {}
+[38.341665] (-) TimerEvent: {}
+[38.442711] (-) TimerEvent: {}
+[38.543639] (-) TimerEvent: {}
+[38.644661] (-) TimerEvent: {}
+[38.745569] (-) TimerEvent: {}
+[38.846475] (-) TimerEvent: {}
+[38.947482] (-) TimerEvent: {}
+[39.048573] (-) TimerEvent: {}
+[39.149605] (-) TimerEvent: {}
+[39.250623] (-) TimerEvent: {}
+[39.351663] (-) TimerEvent: {}
+[39.452570] (-) TimerEvent: {}
+[39.503188] (streamer) StdoutLine: {'line': b'-- Detecting CUDA compiler ABI info - done\n'}
+[39.552876] (-) TimerEvent: {}
+[39.653768] (-) TimerEvent: {}
+[39.718844] (streamer) StdoutLine: {'line': b'-- Check for working CUDA compiler: /usr/local/cuda/bin/nvcc - skipped\n'}
+[39.752245] (streamer) StdoutLine: {'line': b'-- Detecting CUDA compile features\n'}
+[39.753911] (-) TimerEvent: {}
+[39.756095] (streamer) StdoutLine: {'line': b'-- Detecting CUDA compile features - done\n'}
+[39.766628] (streamer) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/install/share/ament_cmake/cmake)\n'}
+[39.854126] (-) TimerEvent: {}
+[39.955138] (-) TimerEvent: {}
+[40.056163] (-) TimerEvent: {}
+[40.157188] (-) TimerEvent: {}
+[40.258291] (-) TimerEvent: {}
+[40.359277] (-) TimerEvent: {}
+[40.460296] (-) TimerEvent: {}
+[40.561308] (-) TimerEvent: {}
+[40.662215] (-) TimerEvent: {}
+[40.763319] (-) TimerEvent: {}
+[40.864381] (-) TimerEvent: {}
+[40.965374] (-) TimerEvent: {}
+[41.066410] (-) TimerEvent: {}
+[41.167418] (-) TimerEvent: {}
+[41.268465] (-) TimerEvent: {}
+[41.369470] (-) TimerEvent: {}
+[41.470434] (-) TimerEvent: {}
+[41.571422] (-) TimerEvent: {}
+[41.631754] (streamer) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/install/share/rclcpp/cmake)\n'}
+[41.671676] (-) TimerEvent: {}
+[41.772296] (streamer) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/install/share/rosidl_generator_c/cmake)\n'}
+[41.773085] (-) TimerEvent: {}
+[41.787497] (streamer) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/install/share/rosidl_adapter/cmake)\n'}
+[41.821993] (streamer) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/install/share/rosidl_generator_cpp/cmake)\n'}
+[41.873460] (-) TimerEvent: {}
+[41.890394] (streamer) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[41.973682] (-) TimerEvent: {}
+[41.987929] (streamer) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[42.073884] (-) TimerEvent: {}
+[42.174917] (-) TimerEvent: {}
+[42.275919] (-) TimerEvent: {}
+[42.335329] (streamer) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/install/share/rmw_implementation_cmake/cmake)\n'}
+[42.341866] (streamer) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/install/share/rmw_cyclonedds_cpp/cmake)\n'}
+[42.376186] (-) TimerEvent: {}
+[42.477240] (-) TimerEvent: {}
+[42.527664] (streamer) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[42.577584] (-) TimerEvent: {}
+[42.678513] (-) TimerEvent: {}
+[42.779531] (-) TimerEvent: {}
+[42.880514] (-) TimerEvent: {}
+[42.981570] (-) TimerEvent: {}
+[43.082632] (-) TimerEvent: {}
+[43.183708] (-) TimerEvent: {}
+[43.284730] (-) TimerEvent: {}
+[43.385807] (-) TimerEvent: {}
+[43.452008] (streamer) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.8 (/opt/ros/humble/install/share/rclcpp_components/cmake)\n'}
+[43.486136] (-) TimerEvent: {}
+[43.587198] (-) TimerEvent: {}
+[43.688232] (-) TimerEvent: {}
+[43.783970] (streamer) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.5 (/opt/ros/humble/install/share/tf2_ros/cmake)\n'}
+[43.788544] (-) TimerEvent: {}
+[43.889561] (-) TimerEvent: {}
+[43.990612] (-) TimerEvent: {}
+[44.091640] (-) TimerEvent: {}
+[44.192664] (-) TimerEvent: {}
+[44.293666] (-) TimerEvent: {}
+[44.394738] (-) TimerEvent: {}
+[44.495776] (-) TimerEvent: {}
+[44.596656] (-) TimerEvent: {}
+[44.697624] (-) TimerEvent: {}
+[44.798562] (-) TimerEvent: {}
+[44.899643] (-) TimerEvent: {}
+[45.000690] (-) TimerEvent: {}
+[45.101754] (-) TimerEvent: {}
+[45.202827] (-) TimerEvent: {}
+[45.303877] (-) TimerEvent: {}
+[45.404847] (-) TimerEvent: {}
+[45.451302] (streamer) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/install/share/sensor_msgs/cmake)\n'}
+[45.505064] (-) TimerEvent: {}
+[45.606187] (-) TimerEvent: {}
+[45.706951] (-) TimerEvent: {}
+[45.807595] (-) TimerEvent: {}
+[45.905496] (streamer) StdoutLine: {'line': b'-- Found image_transport: 3.1.8 (/opt/ros/humble/install/share/image_transport/cmake)\n'}
+[45.907779] (-) TimerEvent: {}
+[45.990790] (streamer) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/install/share/cv_bridge/cmake)\n'}
+[45.999828] (streamer) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/lib/cmake/opencv4/OpenCVConfig.cmake:86 (find_package):\n'}
+[46.000296] (streamer) StderrLine: {'line': b'  Policy CMP0146 is not set: The FindCUDA module is removed.  Run "cmake\n'}
+[46.000551] (streamer) StderrLine: {'line': b'  --help-policy CMP0146" for policy details.  Use the cmake_policy command to\n'}
+[46.000762] (streamer) StderrLine: {'line': b'  set the policy and suppress this warning.\n'}
+[46.000962] (streamer) StderrLine: {'line': b'\n'}
+[46.001199] (streamer) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[46.001407] (streamer) StderrLine: {'line': b'  /usr/local/lib/cmake/opencv4/OpenCVConfig.cmake:108 (find_host_package)\n'}
+[46.001607] (streamer) StderrLine: {'line': b'  /opt/ros/humble/install/share/cv_bridge/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[46.001805] (streamer) StderrLine: {'line': b'  /opt/ros/humble/install/share/cv_bridge/cmake/cv_bridgeConfig.cmake:41 (include)\n'}
+[46.002001] (streamer) StderrLine: {'line': b'  CMakeLists.txt:30 (find_package)\n'}
+[46.002204] (streamer) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[46.002399] (streamer) StderrLine: {'line': b'\x1b[0m\n'}
+[46.008035] (-) TimerEvent: {}
+[46.038940] (streamer) StdoutLine: {'line': b'-- Found CUDA: /usr/local/cuda (found suitable exact version "12.2") \n'}
+[46.108405] (-) TimerEvent: {}
+[46.209510] (-) TimerEvent: {}
+[46.310534] (-) TimerEvent: {}
+[46.411643] (-) TimerEvent: {}
+[46.512644] (-) TimerEvent: {}
+[46.577850] (streamer) StdoutLine: {'line': b'-- Configuring done (45.8s)\n'}
+[46.612869] (-) TimerEvent: {}
+[46.674780] (streamer) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[46.682946] (streamer) StdoutLine: {'line': b'-- Build files have been written to: /DroneWorkspace/build/streamer\n'}
+[46.713201] (-) TimerEvent: {}
+[46.814150] (-) TimerEvent: {}
+[46.915137] (-) TimerEvent: {}
+[47.016162] (-) TimerEvent: {}
+[47.091541] (streamer) StdoutLine: {'line': b'[100%] Built target streamer\n'}
+[47.116429] (-) TimerEvent: {}
+[47.208526] (streamer) CommandEnded: {'returncode': 0}
+[47.216598] (-) TimerEvent: {}
+[47.317552] (-) TimerEvent: {}
+[47.418561] (-) TimerEvent: {}
+[47.519605] (-) TimerEvent: {}
+[47.620652] (-) TimerEvent: {}
+[47.721662] (-) TimerEvent: {}
+[47.822543] (-) TimerEvent: {}
+[47.848399] (streamer) JobProgress: {'identifier': 'streamer', 'progress': 'install'}
+[47.922954] (-) TimerEvent: {}
+[48.024110] (-) TimerEvent: {}
+[48.125149] (-) TimerEvent: {}
+[48.145509] (streamer) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/DroneWorkspace/build/streamer'], 'cwd': '/DroneWorkspace/build/streamer', 'env': OrderedDict([('CMAKE_PREFIX_PATH', '/opt/ros/humble/install'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('PYTHONPATH', '/opt/ros/humble/install/local/lib/python3.10/dist-packages:/opt/ros/humble/install/lib/python3.10/site-packages'), ('CUDA_HOME', '/usr/local/cuda'), ('PWD', '/DroneWorkspace/build/streamer'), ('SHELL', '/bin/bash'), ('DEBIAN_FRONTEND', 'noninteractive'), ('AMENT_PREFIX_PATH', '/opt/ros/humble/install'), ('ROS_ROOT', '/opt/ros/humble'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LANG', 'en_US.UTF-8'), ('DISPLAY', ':0'), ('PATH', '/opt/ros/humble/install/bin:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('QT_X11_NO_MITSHM', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('TERM', 'xterm'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('PKG_CONFIG_PATH', '/opt/ros/humble/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/humble/install/lib/pkgconfig'), ('ROS_VERSION', '2'), ('_', '/usr/bin/colcon'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/opt/ros/humble/install'), ('ROS_PYTHON_VERSION', '3'), ('OLDPWD', '/opt/ros/humble/install'), ('HOME', '/home/devuser'), ('LD_LIBRARY_PATH', '/opt/ros/humble/install/lib:/usr/local/cuda/lib64:/usr/local/cuda/compat:/usr/local/cuda/lib64:'), ('SHLVL', '1'), ('HOSTNAME', 'incarsaron-HP-Pavilion-Laptop-15-eg2xxx'), ('PYTHONIOENCODING', 'utf-8'), ('OPENBLAS_CORETYPE', 'ARMV8')]), 'shell': False}
+[48.225505] (-) TimerEvent: {}
+[48.326566] (-) TimerEvent: {}
+[48.427463] (-) TimerEvent: {}
+[48.430207] (streamer) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[48.435014] (streamer) StdoutLine: {'line': b'-- Up-to-date: /DroneWorkspace/install/streamer/lib/libstreamer.so\n'}
+[48.436579] (streamer) StdoutLine: {'line': b'-- Up-to-date: /DroneWorkspace/install/streamer/share/ament_index/resource_index/package_run_dependencies/streamer\n'}
+[48.437445] (streamer) StdoutLine: {'line': b'-- Up-to-date: /DroneWorkspace/install/streamer/share/ament_index/resource_index/parent_prefix_path/streamer\n'}
+[48.438041] (streamer) StdoutLine: {'line': b'-- Up-to-date: /DroneWorkspace/install/streamer/share/streamer/environment/ament_prefix_path.sh\n'}
+[48.438621] (streamer) StdoutLine: {'line': b'-- Installing: /DroneWorkspace/install/streamer/share/streamer/environment/ament_prefix_path.dsv\n'}
+[48.439701] (streamer) StdoutLine: {'line': b'-- Up-to-date: /DroneWorkspace/install/streamer/share/streamer/environment/path.sh\n'}
+[48.440247] (streamer) StdoutLine: {'line': b'-- Installing: /DroneWorkspace/install/streamer/share/streamer/environment/path.dsv\n'}
+[48.440768] (streamer) StdoutLine: {'line': b'-- Up-to-date: /DroneWorkspace/install/streamer/share/streamer/local_setup.bash\n'}
+[48.441289] (streamer) StdoutLine: {'line': b'-- Up-to-date: /DroneWorkspace/install/streamer/share/streamer/local_setup.sh\n'}
+[48.441823] (streamer) StdoutLine: {'line': b'-- Up-to-date: /DroneWorkspace/install/streamer/share/streamer/local_setup.zsh\n'}
+[48.442337] (streamer) StdoutLine: {'line': b'-- Installing: /DroneWorkspace/install/streamer/share/streamer/local_setup.dsv\n'}
+[48.442876] (streamer) StdoutLine: {'line': b'-- Installing: /DroneWorkspace/install/streamer/share/streamer/package.dsv\n'}
+[48.443409] (streamer) StdoutLine: {'line': b'-- Up-to-date: /DroneWorkspace/install/streamer/share/ament_index/resource_index/packages/streamer\n'}
+[48.443925] (streamer) StdoutLine: {'line': b'-- Up-to-date: /DroneWorkspace/install/streamer/share/ament_index/resource_index/rclcpp_components/streamer\n'}
+[48.444459] (streamer) StdoutLine: {'line': b'-- Up-to-date: /DroneWorkspace/install/streamer/share/streamer/cmake/streamerConfig.cmake\n'}
+[48.444959] (streamer) StdoutLine: {'line': b'-- Up-to-date: /DroneWorkspace/install/streamer/share/streamer/cmake/streamerConfig-version.cmake\n'}
+[48.445490] (streamer) StdoutLine: {'line': b'-- Up-to-date: /DroneWorkspace/install/streamer/share/streamer/package.xml\n'}
+[48.472001] (streamer) CommandEnded: {'returncode': 0}
+[48.528294] (-) TimerEvent: {}
+[48.629133] (-) TimerEvent: {}
+[48.730443] (-) TimerEvent: {}
+[48.831682] (-) TimerEvent: {}
+[48.932713] (-) TimerEvent: {}
+[49.033692] (-) TimerEvent: {}
+[49.134491] (-) TimerEvent: {}
+[49.235363] (-) TimerEvent: {}
+[49.337153] (-) TimerEvent: {}
+[49.438536] (-) TimerEvent: {}
+[49.538776] (streamer) JobEnded: {'identifier': 'streamer', 'rc': 0}
+[49.542110] (-) TimerEvent: {}
+[49.542558] (-) EventReactorShutdown: {}

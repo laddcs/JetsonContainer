@@ -1,0 +1,4 @@
+Invoking command in '/DroneWorkspace/build/streamer': /usr/local/bin/cmake --build /DroneWorkspace/build/streamer -- -j12 -l12
+Invoked command in '/DroneWorkspace/build/streamer' returned '0': /usr/local/bin/cmake --build /DroneWorkspace/build/streamer -- -j12 -l12
+Invoking command in '/DroneWorkspace/build/streamer': /usr/local/bin/cmake --install /DroneWorkspace/build/streamer
+Invoked command in '/DroneWorkspace/build/streamer' returned '0': /usr/local/bin/cmake --install /DroneWorkspace/build/streamer
