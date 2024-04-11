@@ -71,5 +71,5 @@ to check if the computers are connected.
 
 Launch the container with the port forwarded as follows:
 ```bash
-sudo docker run --rm --runtime nvidia --device=/dev/ttyUSB0 --device=/dev/video0 --net=host --privlaged -it YOUR-USERNAME/BUILT-IMAGE
+sudo docker run --rm --runtime nvidia --net=host --privileged -v ./:/DroneWorkspace/data -it YOUR-USERNAME/BUILT-IMAGE
 ```
