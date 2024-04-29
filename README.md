@@ -71,5 +71,5 @@ to check if the computers are connected.
 
 Launch the container with the port forwarded as follows:
 ```bash
-sudo docker run --privileged --net=host --runtime nvidia -v ./data:DroneWorkspace/data -it brycetford/laddcs-deploy
+sudo docker run --privileged --net=host --runtime nvidia -v ./data:/DroneWorkspace/data -it brycetford/laddcs-deploy
 ```
