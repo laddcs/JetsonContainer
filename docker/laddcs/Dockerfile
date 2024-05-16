@@ -9,8 +9,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV SHELL /bin/bash
 SHELL ["/bin/bash", "-c"] 
 
-# Copy in calibration data for the optris
-COPY /data/Optris_Cali /usr/share/libirimager/cali
+
 
 RUN mkdir /DroneWorkspace
 
@@ -39,3 +38,4 @@ WORKDIR /DroneWorkspace
 RUN source /opt/ros/humble/install/setup.bash && \
     colcon build \
     --event-handlers console_direct+
+

@@ -20,6 +20,9 @@ RUN sudo apt-get update -y \
 	&& dpkg -i libirimager-8.9.0-arm64.deb
 WORKDIR /
 
+# Copy in calibration data for the optris
+COPY /data/Optris_Cali /usr/share/libirimager/cali
+
 RUN mkdir temp_ws
 WORKDIR /temp_ws
 
