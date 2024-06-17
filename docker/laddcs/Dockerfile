@@ -9,7 +9,10 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV SHELL /bin/bash
 SHELL ["/bin/bash", "-c"] 
 
-
+COPY /docker/laddcs/entrypoint.sh /entrypoint.sh
+RUN ["chmod", "+x", "/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["/bin/bash"]
 
 RUN mkdir /DroneWorkspace
 

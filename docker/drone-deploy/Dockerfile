@@ -18,6 +18,15 @@ RUN sudo apt-get update -y \
 	&& wget http://ftp.evocortex.com/libirimager-8.9.0-arm64.deb \
 	&& bash -c 'echo "options uvcvideo nodrop=1" > /etc/modprobe.d/uvcvideo.conf' \
 	&& dpkg -i libirimager-8.9.0-arm64.deb
+
+RUN sudo apt-get update -y \
+    && git clone https://github.com/libuvc/libuvc \
+    && cd libuvc \
+    && mkdir build \
+    && cd build \
+    && cmake .. \
+    && make && sudo make install 
+    
 WORKDIR /
 
 # Copy in calibration data for the optris
