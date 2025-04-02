@@ -10,7 +10,9 @@
                 "/usr/include/**",
                 "/usr/local/include/opencv4",
                 "/usr/local/cuda/include",
-                "${workspaceFolder}/HardwareManagers/streamer/include"
+                "${workspaceFolder}/HardwareManagers/streamer/include",
+                "${workspaceFolder}/HardwareManagers/ircamera_manager/include",
+                "${workspaceFolder}/install/hardware_msgs/include/hardware_msgs"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",
