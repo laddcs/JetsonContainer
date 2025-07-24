@@ -27,7 +27,7 @@ sudo docker run --rm --runtime nvidia -it YOUR-USERNAME/BUILT-IMAGE
 
 To bind ports to container use:
 ```bash
-sudo docker run --rm --runtime nvidia --device=/dev/ttyUSB0 --device=/dev/video0 --privlaged -it YOUR-USERNAME/BUILT-IMAGE
+sudo docker run --rm --runtime nvidia --privlaged -it YOUR-USERNAME/BUILT-IMAGE
 ```
 For libirimager to work properly the container must be running as privlaged.
 
