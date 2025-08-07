@@ -34,7 +34,7 @@ For libirimager to work properly the container must be running as privlaged.
 Note when runnint on x86 host, there is an issue with cyclonedds discovering ports so ros might not be functional in container.
 
 Ethernet Setup:
-Want to set the px4 ip address to 192.168.0.4 with dds on port 8888, and set the Jetson ethernet to a static ip 192.168.0.1
+Want to set the px4 ip address to 192.168.0.4 with dds on port 8888, and set the Jetson ethernet to a static ip 192.168.0.2
 
 PX4 Side:
 Need to set up ethernet port to connect to network
@@ -53,7 +53,7 @@ netman update -i eth0
 ```
 The Pixhawk will restart.
 
-Then go to parameters and under UXRCE-DDS-Client set UXCRE_DDS_CFG=Ethernet, UXRCE_DDS_AG_IP=-1062731775 (this is 192.168.0.1 as an int), and UXCRE_DDS_PRT=8888. Reboot Pixhawk
+Then go to parameters and under UXRCE-DDS-Client set UXCRE_DDS_CFG=Ethernet, UXRCE_DDS_AG_IP=-1062731774 (this is 192.168.0.2 as an int), and UXCRE_DDS_PRT=8888. Reboot Pixhawk
 
 Jetson Side:
 Open a terminal and enter to enable connection temporarily
