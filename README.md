@@ -73,6 +73,13 @@ ping 192.168.0.4
 ```
 to check if the computers are connected.
 
+To enable the wifibroadcast module enter
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable wifibroadcast.service
+```
+then restart.
+
 Launch the container with the port forwarded as follows:
 ```bash
 sudo docker run --privileged --net=host --runtime nvidia -v ./data:/DroneWorkspace/data -it brycetford/laddcs-deploy
