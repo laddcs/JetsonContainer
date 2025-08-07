@@ -56,11 +56,15 @@ The Pixhawk will restart.
 Then go to parameters and under UXRCE-DDS-Client set UXCRE_DDS_CFG=Ethernet, UXRCE_DDS_AG_IP=-1062731775 (this is 192.168.0.1 as an int), and UXCRE_DDS_PRT=8888. Reboot Pixhawk
 
 Jetson Side:
-Open a terminal and enter
+Open a terminal and enter to enable connection temporarily
 ```bash
 sudo ip link set eth0 down
-sudo ip addr add 192.168.0.1/24 dev eth0
+sudo ip addr add 192.168.0.2/24 dev eth0
 sudo ip link set eth0 up
+```
+To set perminantly
+```bash
+sudo nmcli con add con-name "px4" ifname eth0 type ethernet ip4 192.168.0.2/24
 ```
 
 Connect the ethernet cable and enter
