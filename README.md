@@ -67,6 +67,8 @@ To set perminantly
 sudo nmcli con add con-name "px4" ifname eth0 type ethernet ip4 192.168.0.2/24
 ```
 
+Try this if nothing else works: https://www.forecr.io/blogs/connectivity/how-to-set-static-ip-for-jetson
+
 Connect the ethernet cable and enter
 ```bash
 ping 192.168.0.4
